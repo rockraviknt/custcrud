@@ -1,0 +1,10 @@
+---
+applications:
+- name: custcrud
+  memory: 1024M
+  host: letsmanagecustomer
+  domain: cfapps.io
+  buildpack: java_buildpack
+  path: target/custcrud-0.0.1-SNAPSHOT.war
+  services:
+  - mysqldb
